@@ -1,0 +1,392 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+/* logo */
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#e44232;
+margin-bottom:15px;
+}
+
+/* APP */
+
+.app{
+display:flex;
+height:100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+width:260px;
+background:#fafafa;
+border-right:1px solid #ddd;
+padding:25px;
+}
+
+.sidebar h2{
+margin-bottom:10px;
+}
+
+.welcome{
+margin-bottom:20px;
+color:#555;
+}
+
+.add-task-btn{
+background:#e44232;
+color:white;
+border:none;
+padding:10px;
+width:100%;
+border-radius:6px;
+margin-bottom:20px;
+cursor:pointer;
+}
+
+.menu{
+list-style:none;
+}
+
+.menu li{
+padding:10px;
+cursor:pointer;
+border-radius:6px;
+margin-bottom:5px;
+display:flex;
+justify-content:space-between;
+}
+
+.menu li:hover{
+background:#eee;
+}
+
+.badge{
+background:#e44232;
+color:white;
+border-radius:10px;
+padding:2px 6px;
+font-size:12px;
+}
+
+.logout-btn{
+margin-top:30px;
+background:#444;
+color:white;
+border:none;
+padding:8px;
+width:100%;
+border-radius:6px;
+cursor:pointer;
+}
+
+/* MAIN */
+
+.main{
+flex:1;
+padding:40px;
+background:#ffffff;
+}
+
+.main h1{
+margin-bottom:25px;
+}
+
+/* TASK FORM */
+
+.task-form{
+background:#fafafa;
+padding:20px;
+border-radius:8px;
+margin-bottom:25px;
+}
+
+.task-form input,
+.task-form select{
+width:100%;
+padding:8px;
+margin-bottom:10px;
+border:1px solid #ddd;
+border-radius:6px;
+}
+
+.task-form button{
+background:#e44232;
+color:white;
+border:none;
+padding:8px 15px;
+border-radius:6px;
+cursor:pointer;
+}
+
+/* TASK CARD */
+
+.task-card{
+border-bottom:1px solid #eee;
+padding:15px 0;
+}
+
+.task-title{
+font-size:16px;
+font-weight:600;
+}
+
+.task-info{
+font-size:13px;
+color:#777;
+margin-top:4px;
+}
+
+.task-buttons{
+margin-top:8px;
+}
+
+.complete-btn{
+background:#2ecc71;
+border:none;
+color:white;
+padding:5px 10px;
+border-radius:5px;
+cursor:pointer;
+}
+
+.delete-btn{
+background:#e74c3c;
+border:none;
+color:white;
+padding:5px 10px;
+border-radius:5px;
+margin-left:6px;
+cursor:pointer;
+}
+
+/* ========================= */
+/* LOGIN & REGISTER PAGE */
+/* ========================= */
+
+.auth{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:#f4f6f9;
+}
+
+.auth-box{
+width:350px;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.auth-box h2{
+margin-bottom:20px;
+}
+
+.auth-box input{
+width:100%;
+padding:10px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:6px;
+font-size:14px;
+}
+
+.auth-box button{
+width:100%;
+padding:10px;
+background:#e44232;
+color:white;
+border:none;
+border-radius:6px;
+font-size:15px;
+cursor:pointer;
+}
+
+.auth-box button:hover{
+background:#c73628;
+}
+
+.auth-box p{
+margin-top:15px;
+font-size:14px;
+}
+
+.auth-box a{
+color:#e44232;
+text-decoration:none;
+}
+
+.auth-box a:hover{
+text-decoration:underline;
+}
+
+/* WELCOME PAGE */
+
+.welcome-body{
+background:#f4f4f4;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.welcome-container{
+display:flex;
+width:80%;
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.welcome-left{
+flex:1;
+padding:40px;
+}
+
+.welcome-left h1{
+margin-bottom:20px;
+}
+
+.welcome-card{
+background:#fafafa;
+padding:20px;
+border-radius:8px;
+margin-bottom:20px;
+}
+
+.welcome-card ul{
+list-style:none;
+margin-top:10px;
+}
+
+.welcome-card li{
+margin-bottom:8px;
+}
+
+.start-btn{
+background:#e44232;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:6px;
+cursor:pointer;
+font-size:16px;
+transition:all 0.2s ease;
+}
+
+.start-btn:hover{
+background:#d63426;
+transform:scale(1.05);
+}
+
+.welcome-right{
+flex:1;
+background:#f7f3ef;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+padding:40px;
+}
+
+.stat-box{
+background:white;
+padding:20px;
+border-radius:10px;
+text-align:center;
+transition:all 0.2s ease;
+}
+
+.stat-box:hover{
+transform:translateY(-5px);
+box-shadow:0 6px 15px rgba(0,0,0,0.1);
+}
+/* welcome checklist */
+
+.welcome-list{
+list-style:none;
+padding:0;
+margin-top:10px;
+}
+
+.welcome-list li{
+display:flex;
+align-items:center;
+margin-bottom:10px;
+font-size:16px;
+}
+
+.check{
+color:#2ecc71;
+font-weight:bold;
+margin-right:10px;
+font-size:18px;
+}
+
+.circle{
+color:#aaa;
+margin-right:10px;
+font-size:18px;
+}
+
+/* TASK PROGRESS */
+
+.progress-container{
+background:#fafafa;
+padding:15px;
+border-radius:8px;
+margin-bottom:20px;
+}
+
+.progress-bar{
+height:10px;
+background:#00ff80;
+width:0%;
+transition: width 0.4s ease;
+border-radius:5px;
+}
+
+#progressFill{
+height:100%;
+width:0%;
+background:#2ecc71;
+transition:width 0.4s ease;
+}
+
+#progressText{
+font-size:14px;
+color:#555;
+}
+
+/* FILTER BAR */
+
+.filter-bar{
+display:flex;
+gap:10px;
+margin:15px 0;
+}
+
+.filter-bar select,
+.filter-bar input{
+padding:6px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.filter-bar button{
+background:#444;
+color:white;
+border:none;
+padding:6px 10px;
+border-radius:5px;
+cursor:pointer;
+}
